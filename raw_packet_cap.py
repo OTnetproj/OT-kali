@@ -27,7 +27,6 @@ def packet_callback(packet):
     try:
         if packet['MBTCP']:
             packet_bytes = packet.get_raw_packet()
-            # match = read_coils_rule.match(data=packet_str)
             match = rules.match(data=packet_bytes)
             if match:
                 print(match)
