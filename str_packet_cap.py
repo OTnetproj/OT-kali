@@ -5,8 +5,8 @@ from datetime import datetime
 import json
 import argparse
 
-rule1_path='/home/kali/Desktop/OT/YARA/rules/read_coils.yar'
-rule2_path='/home/kali/Desktop/OT/YARA/rules/write_single_coil.yar'
+rule1_path='/home/kali/Desktop/OT-kali/YARA/rules/read_coils.yar'
+rule2_path='/home/kali/Desktop/OT-kali/YARA/rules/write_single_coil.yar'
 rules = yara.compile(filepaths={
     'namespace1': rule1_path,
     'namespace2': rule2_path
