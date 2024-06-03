@@ -4,6 +4,7 @@ import yara
 from datetime import datetime
 import json
 import argparse
+import requests
 
 rule1_path='/home/kali/Desktop/OT-repo/YARA/rules/read_coils.yar'
 rule2_path='/home/kali/Desktop/OT-repo/YARA/rules/write_single_coil.yar'
