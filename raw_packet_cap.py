@@ -1,7 +1,6 @@
 import os
 import pyshark
 import yara
-import datetime
 from datetime import datetime
 import json
 import argparse
