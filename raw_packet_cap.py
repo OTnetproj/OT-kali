@@ -17,7 +17,7 @@ rules = yara.compile(filepaths={
     })
 
 elk_pass = os.getenv('ELASTIC_PASSWORD')
-url = "https://132.72.48.18:9200/packets_report/_doc?pipeline=add_date"
+url = "https://132.72.49.244:9200/packets_report/_doc?pipeline=add_date"
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 logging.basicConfig(level=logging.INFO, filename="/var/log/OT/packet_cap.log", filemode="w", format='%(asctime)s - %(levelname)s - %(message)s')
 
